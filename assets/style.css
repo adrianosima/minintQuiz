@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkBlue: #071F39;
+    --darkAdoBlue: #132941;
+    --meanBlue: #2F6EB1;
+    --yellowGold: #E8A401;
+    --white: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    max-width: 400px;
+
+}
+
+h1:hover {
+    color: #1060b6;
+    
+}
+
+body {
+    background-color: var(--darkBlue);
+    max-width: 100%;
+    max-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    min-width: 320px;
+    min-height: 100px;
+    background-color:  var(--darkAdoBlue);
+    color: #082f58;
+    margin: 100px auto 0;
+    padding: 10;
+    border-radius: 20px;
+}
+
+/*section content*/
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    min-width: 50%;
+    border-radius: 4px;
+    background-color: var(--white);
+    margin: 20px 0px;
+}
+
+#Questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 90px;
+    border:2px solid  #1060b6;
+    background-color: #42576e2f;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+#Questions:hover {
+    background-color: #42576e71;
+}
+
+#answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    gap: 6px;
+    padding: 4px;
+}
+
+.btn{
+    border: none;
+    background-color: var(--yellowGold);
+    color: #0b4685;
+    min-height: 30px;
+    border-radius: 5px;
+    min-width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+.btn:hover{
+    background-color: #e8a301c9;
+    color: #0b4685;   
+}
+
+.btnP {
+    display: none;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: var(--darkBlue);
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#answer .btnP:hover {
+    background-color: #071f39d8;
+}
+
+/* style for correct question*/
+.correct {  
+    color: white;
+    background-color: rgb(11, 160, 11);
+}
+
+.correct:hover {
+    background-color: rgba(0, 128, 0, 0.719);
+}
+
+/*finish*/
+
+/*style for incurrect question*/
+.incorrect{
+    background-color: #e60a0a;
+}
+
+.incorrect:hover {
+    background-color: #e60a0ac2;
+}
+
+/*finish*/
