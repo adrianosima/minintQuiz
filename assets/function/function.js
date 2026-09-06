@@ -95,22 +95,26 @@ function showScore(){
     nextBtn.style.display = 'block'
 }
 
-function handleNextButton(){
+function NextButton(){
     currentIndexQuestion++
     if (currentIndexQuestion < questions[currentQuestionIndex].length){
      showQuestion()
+     
     }else{
         showScore()
+        
     }
 } 
 
 nextBtn.addEventListener('click', ()=>{
     if (currentIndexQuestion < questions[currentQuestionIndex].length){
-        handleNextButton()
+        NextButton()
+        
     }else{
         startQuiz()
     }
 })
 
+console.log(questions.length)
 //inicializando o quiz
 startQuiz()

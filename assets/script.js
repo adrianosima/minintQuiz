@@ -5,6 +5,8 @@ const questionElement = document.getElementById('question')
 const answerBtns = document.getElementById('answer')
 const nextBtn = document.getElementById('nextBtn')
 
+const history = document.getElementsByClassName('his')[0]
+
 let currentQuestionIndex = 0
 let score = 0
 
@@ -12,6 +14,7 @@ let score = 0
 function startQuiz(){
     currentQuestionIndex = 0
     score = 0
+    history.style.width = `0%`
     nextBtn.innerHTML = 'Proximo'
     showQuestion()
 }
@@ -64,6 +67,7 @@ function selectAnswer(e){
     if (isCorrect){
         selectedBtn.classList.add('correct')
         score++
+        history.style.width = `${score}.33%`
     }else{
         selectedBtn.classList.add('incorrect')
     }
