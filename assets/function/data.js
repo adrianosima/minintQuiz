@@ -419,11 +419,91 @@ const questions =[
         answers: [
             {id:1, text: 'Lubango', correct: true},
             {id:2, text: 'Benguela', correct: false},
-            {id:3, text: 'Luanda', correct: false},
+            {id:3, text: 'Mavinga', correct: false},
             {id:4, text: 'Malange', correct: false}
         ]
     },
-
+    {
+        question: 'O que é a Assembleia Nacional?',
+        answers: [
+            {id:1, text: 'É o órgão executivo do Estado angolano, responsável, entre outras funções, pela elaboração de leis e fiscalização política nos termos da Constituição', correct: false},
+            {id:2, text: 'É o órgão responsável, entre outras funções, pela elaboração de novas estratégias fiscalização política nos termos da Constituição', correct: false},
+            {id:3, text: 'É o órgão legislativo do Estado angolano, responsável, entre outras funções, pela elaboração de leis e fiscalização política nos termos da Constituição', correct: true},
+            {id:4, text: 'É um órgão legislativo do Estado angolano', correct: false}
+        ]
+    },
+    {
+        question: 'O que é uma província?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: true},
+            {id:2, text: 'É uma unidade territorial administrativa que integra uma província e possui uma administração local do Estado', correct: false},
+            {id:3, text: 'É uma unidade territorial administrativa de nível inferior ao município', correct: false},
+            {id:4, text: 'É a organização administrativa do Estado existente no território, responsável pela execução das políticas e serviços públicos ao nível loca', correct: false}
+        ]
+    },
+    {
+        question: 'O que é um município?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: false},
+            {id:2, text: 'É uma unidade territorial administrativa que integra uma província e possui uma administração local do Estado', correct: true},
+            {id:3, text: 'É uma unidade territorial administrativa de nível inferior ao município', correct: false},
+            {id:4, text: 'É a organização administrativa do Estado existente no território, responsável pela execução das políticas e serviços públicos ao nível loca', correct: false}
+        ]
+    },
+    {
+        question: 'O que é uma comuna?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial administrativa que integra uma província e possui uma administração local do Estado', correct: false},
+            {id:2, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: false},
+            {id:3, text: 'É uma unidade territorial administrativa de nível inferior ao município', correct: true},
+            {id:4, text: 'É a organização administrativa do Estado existente no território, responsável pela execução das políticas e serviços públicos ao nível loca', correct: false}
+        ]
+    },
+    {
+        question: 'O que significa Administração Local do Estado?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial administrativa que integra uma província e possui uma administração local do Estado', correct: false},
+            {id:2, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: false},
+            {id:3, text: 'É a organização administrativa do Estado existente no território, responsável pela execução das políticas e serviços públicos ao nível loca', correct: true},
+            {id:4, text: 'É uma unidade territorial administrativa de nível inferior ao município', correct: false},
+        ]
+    },
+    {
+        question: 'O que é uma desconcentração administrativa?',
+        answers: [
+            {id:1, text: 'É a transferência de competências dentro da própria Administração do Estado, dos órgãos centrais para órgãos locais', correct: true},
+            {id:2, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: false},
+            {id:3, text: 'Desconcentração envolve a transferência de poderes e competências para entidades com autonomia própria, como as autarquias locais', correct: false},
+            {id:4, text: 'É uma unidade territorial administrativa', correct: false},
+        ]
+    },
+    {
+        question: 'O que é uma descentralização administrativa?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial e administrativa do estado', correct: false},
+            {id:2, text: 'É uma unidade territorial da organização político-administrativa do Estado', correct: false},
+            {id:3, text: 'É a transferência de competências dentro da própria Administração do Estado, dos órgãos centrais para órgãos locais', correct: false},
+            {id:4, text: 'descentralização envolve a transferência de poderes e competências para entidades com autonomia própria, como as autarquias locais', correct: true},
+        ]
+    },
+    {
+        question: 'O que são autarquias locais?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial e administrativa do estado', correct: false},
+            {id:2, text: ' São entidades territoriais autónomas destinadas a fazer cumprir o prossecução dos interesses específicos das populações locais, nos termos da Constituição e da lei.', correct: false},
+            {id:3, text: 'É a transferência de competências dentro da própria Administração do Estado, dos órgãos centrais para órgãos locais', correct: false},
+            {id:4, text: ' São entidades territoriais autónomas destinadas a assegurar a prossecução dos interesses específicos das populações locais, nos termos da Constituição e da lei.', correct: true},
+        ]
+    },
+    {
+        question: 'Qual é a importância da descentralização administrativa?',
+        answers: [
+            {id:1, text: 'É uma unidade territorial e administrativa do estado', correct: false},
+            {id:2, text: ' São entidades territoriais autónomas destinadas a fazer cumprir o prossecução dos interesses específicos das populações locais, nos termos da Constituição e da lei.', correct: false},
+            {id:3, text: 'É a transferência de competências dentro da própria Administração do Estado, dos órgãos centrais para órgãos locais', correct: false},
+            {id:4, text: ' Aproxima a Administração dos cidadãos, permitindo que os problemas locais sejam tratados de forma mais próxima e adequada', correct: true},
+        ]
+    },
 ]
 
 export {questions}

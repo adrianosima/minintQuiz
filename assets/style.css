@@ -125,7 +125,8 @@ main {
 }
 
 .btn:disabled{
-    cursor: no-drop;
+    border: 1px solid gray;
+    color: gray;
 }
 
 #answer .btnP:hover {
@@ -135,11 +136,11 @@ main {
 /* style for correct question*/
 .correct {  
     color: white;
-    background-color: rgb(11, 160, 11);
+    background-color: #008000b7;
 }
 
 .correct:hover {
-    background-color: rgba(0, 128, 0, 0.719);
+    background-color: #019201b7;
 }
 
 /*finish*/
@@ -164,13 +165,13 @@ main {
     min-height: 7px;
     border-radius: 4px;
     border: 0.4px solid rgba(117, 116, 116, 0.95);
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.233);
 }
 
 .his {
     
-    border-radius: 4px 0px 0px 4px;
-    background-color: #071F39;
+    border-radius: 4px ;
+    background-color: #0a2e55;
 }
 .mi {
     border-radius: 0px;

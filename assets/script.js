@@ -7,8 +7,12 @@ const nextBtn = document.getElementById('nextBtn')
 
 const history = document.getElementsByClassName('his')[0]
 
+
 let currentQuestionIndex = 0
 let score = 0
+
+
+
 
 /*iniciando o quis */
 function startQuiz(){
@@ -37,8 +41,8 @@ function showQuestion(){
     //fim
     /*Pegando as questons e as respostas de maneira dinamica */
     let currentQuestion = questions[currentQuestionIndex]
-    let questioNo = currentQuestionIndex +1
-    questionElement.innerHTML = questioNo + '.' + currentQuestion.question
+    let indexQuestion = currentQuestionIndex +1
+    questionElement.innerHTML =` ${indexQuestion}. ${currentQuestion.question}`
     /*Percorrendo o div que tera as respostas, e addicionando as respostas dinamicamente*/
     currentQuestion.answers.forEach((answer)=>{
         const button = document.createElement('button')
@@ -55,7 +59,7 @@ function showQuestion(){
 /*Selecionar a respostas */
 function selectAnswer(e){
    const answers = questions[currentQuestionIndex].answers
-/*Pegando apenas as resposta marcadas co, verdadeira(True) */
+/*Pegando apenas as resposta marcadas com verdadeira(True) */
     const correctAnswer = answers.filter((answer)=> answer.correct === true)[0]
     //fim
 
@@ -67,7 +71,8 @@ function selectAnswer(e){
     if (isCorrect){
         selectedBtn.classList.add('correct')
         score++
-        history.style.width = `${score}.33%`
+        history.style.width = `${score}.79%`
+        
     }else{
         selectedBtn.classList.add('incorrect')
     }
@@ -100,6 +105,6 @@ nextBtn.addEventListener('click', ()=>{
         startQuiz()
     }
 })
-
+console.log(questions.length)
 //inicializando o quiz
 startQuiz()
