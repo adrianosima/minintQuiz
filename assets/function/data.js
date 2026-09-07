@@ -319,7 +319,7 @@ const questions =[
     question: 'Quem exerce o Poder Legislativo?',
     answers: [
         {id:1, text: 'Presidente da República', correct: false},
-        {id:2, text: 'Assembleia Nacional', correct: true},
+        {id:2, text: 'Assembleia Nacional', correct: false},
         {id:3, text: 'Tribunais', correct: true},
         {id:4, text: 'Ministro', correct: false}
     ]
